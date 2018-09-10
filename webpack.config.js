@@ -30,5 +30,10 @@ module.exports = {
             title: 'solver',
             template: 'index.html'
         })
-    ]
+    ],
+    devServer: {
+        proxy: {
+            '/**': 'http://localhost:8080'
+        }
+    }
 };
